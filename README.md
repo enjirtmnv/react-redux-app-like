@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Anime app like
 
-https://enjirtmnv.github.io/react-redux-toolkit-app-like/
+Site is published at https://enjirtmnv.github.io/react-redux-toolkit-app-like/
