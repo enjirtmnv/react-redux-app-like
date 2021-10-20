@@ -25,7 +25,6 @@ const AnimeItem = (props) => {
               <FaRegHeart/>
             </button>
         }
-
         <button onClick={() => removeAnime(item.mal_id)}>
           <CgClose/>
         </button>

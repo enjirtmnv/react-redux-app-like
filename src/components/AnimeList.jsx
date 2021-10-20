@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-
 import {likeAnime, removeAnime, unlikeAnime} from "../redux/reducer";
 import {connect, useDispatch} from "react-redux";
 import AnimeItem from "./AnimeItem";
@@ -32,7 +31,7 @@ const AnimeList = (props) => {
 
   useEffect(() => {
     dispatch(fetchAnime(API_ANIME));
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={'main__container'}>
