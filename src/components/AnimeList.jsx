@@ -24,8 +24,6 @@ const mapDispatchToProps = (dispatch) => {
 const AnimeList = (props) => {
   const dispatch = useDispatch();
 
-  console.log(props);
-
   const [filterLike, setFilterLike] = useState(false);
   const toggleLike = () => setFilterLike(!filterLike);
 
