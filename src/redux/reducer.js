@@ -23,6 +23,17 @@ const addTodoReducer = createSlice({
         }
         return item
       });
+    },
+    unlikeAnime: (state, action) => {
+      state.anime = state.anime.map((item) => {
+        if (item.mal_id === action.payload) {
+          return {
+            ...item,
+            like: false,
+          }
+        }
+        return item
+      });
     }
   },
   extraReducers: {
@@ -42,5 +53,5 @@ const addTodoReducer = createSlice({
   }
 });
 
-export const {removeAnime, likeAnime} = addTodoReducer.actions;
+export const {removeAnime, likeAnime, unlikeAnime} = addTodoReducer.actions;
 export const reducer = addTodoReducer.reducer;
