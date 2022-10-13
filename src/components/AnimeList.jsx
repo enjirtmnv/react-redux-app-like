@@ -47,7 +47,8 @@ const AnimeList = (props) => {
 
         </button>
       </div>
-      <ul className={'list__container'}>
+      {props.anime && 
+        <ul className={'list__container'}>
         {
           props.anime.length > 0 && !filterLike
             ? props.anime.map(item => {
@@ -63,7 +64,6 @@ const AnimeList = (props) => {
             })
             : null
         }
-
         {
           props.anime.length > 0 && filterLike
             ? props.anime.map(item => {
@@ -81,6 +81,7 @@ const AnimeList = (props) => {
             : null
         }
       </ul>
+      }
     </div>
   );
 };

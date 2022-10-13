@@ -11,7 +11,7 @@ const AnimeItem = (props) => {
     <li key={item.mal_id} className={'list__item'}>
       <img
         className={'list__img'}
-        src={item.image_url}
+        src={item.images.jpg.image_url}
         alt={item.title}
       />
       <p className={'list__title'}>{item.title}</p>

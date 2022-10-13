@@ -10,7 +10,7 @@ export const fetchAnime = createAsyncThunk(
         console.error(res.status);
       }
       const data = await res.json();
-      return data.top;
+      return data.data;
 
     } catch (e) {
       console.error(e.message);
